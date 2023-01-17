@@ -4,11 +4,11 @@ this app clones the famous wordle game, it generates a 5 letter word each turn a
 
 ## How to run
 
-- cd into the project
+- clone the app and cd into the project
 
 - in the root directory run **npm install**
 
-- in the root directory run the command **npx json-server --watch data/db.json --port 8000**
+- in a separate console in the root directory run the command **npx json-server --watch data/db.json --port 8000**
 
 - in the root directory start the app with **npm start** or **npm run start**
 
