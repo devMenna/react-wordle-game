@@ -7,7 +7,7 @@ function App() {
   const [solution , setSolution] = useState(null)
 
   useEffect(() => {
-    fetch('https://wordle-database.herokuapp.com/solutions')
+    fetch('http://localhost:8000/solutions')
     .then(res => res.json())
     .then(json => {
       const randomSolution = json[Math.floor(Math.random() * json.length)]

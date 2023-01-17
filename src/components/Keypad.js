@@ -6,7 +6,7 @@ export default function Keypad({usedKeys}) {
     const [letters , setLetters] = useState(null)
 
     useEffect(() => {
-        fetch('https://wordle-database.herokuapp.com/letters')
+        fetch('http://localhost:8000/letters')
         .then(res => res.json())
         .then(json => setLetters(json)
         )},[])
